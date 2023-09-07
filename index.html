@@ -4,10 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+
+    <!-- styles & icons -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <script src="script_v1.js"></script>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <h3>First 5 win the game!</h3>
+    </header>
+                                            
+    <div class="weapon-grid">
+        <div class="weapon-container" id="rock">
+            <div class="sign">✊🏼</div>
+            <div class="label">
+                <p>Rock</p>
+            </div>
+        </div>
+        <div class="weapon-container" id="paper">
+            <div class="sign">🤚🏼</div>
+            <div class="label">
+                <p>Paper</p>
+            </div>
+        </div>
+        <div class="weapon-container" id="scissors">
+            <div class="sign">✌🏼</div>
+            <div class="label">
+                <p>Scissors</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <h3 id="round" >Round: </h3>
+        <br>
+        <div class="scores">
+            <div id="player-choice">
+                Player choice:
+            </div>
+            <div id="computer-choice">
+                Computer choice:
+            </div>
+        </div>
+        <br>
+        <h2 id="message">Lost or Win</h2>
+
+    </div>
+
+    <div class="score-container">
+        <h3 class="score-label" id="player-score">
+            You: 0
+        </h3>
+        <h3 class="score-label" id="computer-score">
+            Computer: 0
+        </h3>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/ainacodes" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            ainacodes
+        </a>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(220.55deg, #b7dcff 0%, #ffa4f6 100%);
+  color: #000;
+  min-height: 100%;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 3rem;
+}
+
+h2,
+h3,
+p,
+a,
+div {
+  font-family: 'Source Code Pro', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.weapon-grid {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.weapon-container {
+  width: 400px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #cbf3d2;
+  text-align: center;
+  box-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.weapon-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.img-box {
+  height: 100px;
+  padding: 0.5rem;
+}
+
+.sign {
+  font-size: 5rem;
+}
+
+.message-container {
+  margin: 1rem 10rem;
+  text-align: center;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.footer {
+  position: absolute;
+  margin: 1rem;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
